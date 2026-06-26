@@ -130,10 +130,11 @@ export default defineConfig({
       next: 'Selanjutnya',
     },
 
-    editLink: {
-      pattern: 'https://github.com/driyoagung/basic-vuejs/edit/main/docs/:path',
-      text: 'Edit halaman ini',
-    },
+    // editLink dinonaktifkan untuk halaman publik
+    // editLink: {
+    //   pattern: 'https://github.com/driyoagung/basic-vuejs/edit/main/docs/:path',
+    //   text: 'Edit halaman ini',
+    // },
 
     lastUpdated: {
       text: 'Terakhir diperbarui',
