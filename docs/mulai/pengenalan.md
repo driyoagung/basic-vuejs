@@ -276,5 +276,5 @@ import SalamDunia from './components/SalamDunia.vue'
 | **SFC** | Single File Component — gabungan `<script>`, `<template>`, `<style>` dalam file `.vue` |
 | **Vite** | Build tool modern yang super cepat untuk development |
 | **Composition API** | Cara modern menulis logic Vue dengan `<script setup>` |
-| **`{{ }}`** | Text interpolation — menampilkan data JavaScript di template |
+| **<code v-pre>{{ }}</code>** | Text interpolation — menampilkan data JavaScript di template |
 | **`npm run dev`** | Menjalankan development server dengan HMR |

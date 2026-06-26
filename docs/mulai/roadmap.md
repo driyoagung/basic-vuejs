@@ -46,7 +46,7 @@ Panduan ini disusun dalam **5 fase** yang harus dipelajari secara berurutan. Set
 
 | # | Topik | Deskripsi |
 |---|-------|-----------|
-| 1 | [Template Syntax & Data Binding](/fase-1/template-syntax) | Interpolasi `{{ }}`, directive `v-bind`, `v-html` |
+| 1 | [Template Syntax & Data Binding](/fase-1/template-syntax) | Interpolasi <code v-pre>{{ }}</code>, directive `v-bind`, `v-html` |
 | 2 | [Reactivity (ref, reactive, computed)](/fase-1/reactivity) | Sistem reactive Vue: `ref()`, `reactive()`, `computed()`, `watch()` |
 | 3 | [Event Handling & Methods](/fase-1/event-handling) | `v-on` / `@`, event modifier, key modifier |
 | 4 | [Conditional & List Rendering](/fase-1/conditional-list) | `v-if`, `v-else`, `v-show`, `v-for`, `:key` |

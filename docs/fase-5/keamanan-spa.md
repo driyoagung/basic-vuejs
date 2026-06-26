@@ -6,7 +6,7 @@ Berikut adalah panduan utama menjaga keamanan aplikasi Vue.js.
 
 ## 1. Hindari XSS dengan tidak memakai `v-html`
 
-**Cross-Site Scripting (XSS)** adalah serangan di mana peretas menyuntikkan script berbahaya ke dalam halaman webmu. Di Vue, interpolasi text biasa `{{ }}` sudah **100% aman** dari XSS karena Vue otomatis melakukan *escaping* pada karakter HTML.
+**Cross-Site Scripting (XSS)** adalah serangan di mana peretas menyuntikkan script berbahaya ke dalam halaman webmu. Di Vue, interpolasi text biasa <code v-pre>{{ }}</code> sudah **100% aman** dari XSS karena Vue otomatis melakukan *escaping* pada karakter HTML.
 
 ```vue
 <script setup>

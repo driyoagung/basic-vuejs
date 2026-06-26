@@ -4,7 +4,7 @@ Template syntax adalah cara Vue.js menghubungkan **data** di JavaScript dengan *
 
 ## Text Interpolation (Mustache)
 
-Cara paling dasar menampilkan data menggunakan sintaks double curly braces `{{ }}`:
+Cara paling dasar menampilkan data menggunakan sintaks double curly braces <code v-pre>{{ }}</code>:
 
 ```vue
 <script setup>
@@ -25,7 +25,7 @@ const angka = 42
 ```
 
 ::: warning Expression vs Statement
-Hanya **expression** (menghasilkan nilai) yang diperbolehkan di dalam `{{ }}`, bukan **statement** (perintah).
+Hanya **expression** (menghasilkan nilai) yang diperbolehkan di dalam <code v-pre>{{ }}</code>, bukan **statement** (perintah).
 
 ```vue
 <!-- ✅ Expression — menghasilkan nilai -->
@@ -42,7 +42,7 @@ Hanya **expression** (menghasilkan nilai) yang diperbolehkan di dalam `{{ }}`, b
 
 ## Raw HTML — `v-html`
 
-Secara default, `{{ }}` menampilkan teks mentah (HTML di-escape). Untuk merender HTML asli, gunakan directive `v-html`:
+Secara default, <code v-pre>{{ }}</code> menampilkan teks mentah (HTML di-escape). Untuk merender HTML asli, gunakan directive `v-html`:
 
 ```vue
 <script setup>
@@ -166,7 +166,7 @@ Directive adalah atribut khusus Vue dengan prefix `v-`. Berikut daftar directive
 | `v-for` | — | Loop / iterasi | `<li v-for="item in items">` |
 | `v-html` | — | Render raw HTML | `<div v-html="html">` |
 | `v-text` | — | Set text content | `<p v-text="teks">` |
-| `v-once` | — | Render sekali saja | `<p v-once>{{ statis }}` |
+| `v-once` | — | Render sekali saja | <code v-pre>&lt;p v-once&gt;{{ statis }}</code> |
 | `v-memo` | — | Cache conditional | `<div v-memo="[dep]">` |
 | `v-slot` | `#` | Slot template | `<template #header>` |
 
@@ -312,7 +312,7 @@ const mulaiProses = () => {
 
 | Konsep | Syntax | Keterangan |
 |--------|--------|------------|
-| Text Interpolation | `{{ data }}` | Menampilkan data sebagai teks |
+| Text Interpolation | <code v-pre>{{ data }}</code> | Menampilkan data sebagai teks |
 | Raw HTML | `v-html="data"` | Merender HTML (hati-hati XSS!) |
 | Attribute Binding | `:attr="data"` | Bind data ke atribut HTML |
 | Multiple Bind | `v-bind="object"` | Bind semua atribut dari object |

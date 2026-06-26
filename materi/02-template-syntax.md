@@ -28,14 +28,14 @@ const angka = 42
 ```
 
 > ⚠️ **Catatan:** Hanya **expression** yang diperbolehkan, bukan **statement**.
-> - ✅ `{{ angka + 1 }}` — expression
-> - ❌ `{{ if (true) { return 'ya' } }}` — statement (tidak boleh!)
+> - ✅ <code v-pre>{{ angka + 1 }}</code> — expression
+> - ❌ <code v-pre>{{ if (true) { return 'ya' } }}</code> — statement (tidak boleh!)
 
 ---
 
 ## 2️⃣ Raw HTML — `v-html`
 
-Secara default, `{{ }}` akan menampilkan teks biasa (escape HTML). Untuk merender HTML asli:
+Secara default, <code v-pre>{{ }}</code> akan menampilkan teks biasa (escape HTML). Untuk merender HTML asli:
 
 ```vue
 <script setup>
@@ -249,7 +249,7 @@ const mulaiProses = () => {
 
 | Konsep | Syntax | Contoh |
 |--------|--------|--------|
-| Text Interpolation | `{{ data }}` | `{{ nama }}` |
+| Text Interpolation | <code v-pre>{{ data }}</code> | <code v-pre>{{ nama }}</code> |
 | Raw HTML | `v-html` | `<p v-html="html"></p>` |
 | Attribute Binding | `v-bind:attr` / `:attr` | `<img :src="url" />` |
 | Multiple Bind | `v-bind="object"` | `<input v-bind="attrs" />` |

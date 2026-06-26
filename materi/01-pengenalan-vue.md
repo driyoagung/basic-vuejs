@@ -207,7 +207,7 @@ import SalamDunia from './components/SalamDunia.vue'
 | SFC | Single File Component (`.vue`) — gabungan template, script, style |
 | Vite | Build tool modern yang super cepat |
 | `<script setup>` | Cara modern menulis logic di Vue 3 (Composition API) |
-| `{{ }}` | Interpolasi — menampilkan data di template |
+| <code v-pre>{{ }}</code> | Interpolasi — menampilkan data di template |
 | `npm run dev` | Menjalankan development server |
 
 ---
