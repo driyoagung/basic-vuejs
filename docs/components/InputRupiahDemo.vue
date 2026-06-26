@@ -19,7 +19,7 @@ const formattedRupiah = computed({
 
 <template>
   <div class="demo-box">
-    <label style="display: block; margin-bottom: 8px; font-weight: bold;">
+    <label style="display: block; margin-bottom: 8px; font-weight: bold; color: var(--vp-c-text-1);">
       Harga Produk (Input Masking):
     </label>
     <input 
@@ -28,9 +28,9 @@ const formattedRupiah = computed({
       class="demo-input"
       placeholder="Ketik angka..." 
     />
-    <p style="margin-top: 12px; color: #475569;">
+    <p style="margin-top: 12px; color: var(--vp-c-text-2);">
       Data Asli (Integer) yang disimpan di State: 
-      <strong style="color: #3b82f6; font-size: 1.2em;">{{ rawValue }}</strong>
+      <strong style="color: var(--vp-c-brand-1); font-size: 1.2em;">{{ rawValue }}</strong>
     </p>
   </div>
 </template>
@@ -38,22 +38,23 @@ const formattedRupiah = computed({
 <style scoped>
 .demo-box {
   padding: 24px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--vp-c-border);
   border-radius: 8px;
-  background: #f8fafc;
+  background: var(--vp-c-bg-soft);
   margin: 20px 0;
 }
 .demo-input {
   width: 100%;
   padding: 10px 14px;
   font-size: 16px;
-  border: 1px solid #cbd5e1;
+  color: var(--vp-c-text-1);
+  border: 1px solid var(--vp-c-border);
   border-radius: 6px;
-  background: white;
+  background: var(--vp-c-bg-alt);
 }
 .demo-input:focus {
   outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 2px var(--vp-c-brand-soft);
 }
 </style>
