@@ -1,35 +1,46 @@
-@import './base.css';
+/* ============================================================
+   GLOBAL STYLES + TAILWIND CSS v4
+   [MATERI FASE 1: CSS Variables + Tailwind Theme]
+   
+   Tailwind CSS v4 menggunakan @import untuk inisialisasi.
+   Kustomisasi theme dilakukan langsung di @theme block.
+   ============================================================ */
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@import "tailwindcss";
+
+/* --- Custom Theme (Tailwind v4 CSS-first config) --- */
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+
+  /* Brand Colors */
+  --color-primary-50:  #eef2ff;
+  --color-primary-100: #e0e7ff;
+  --color-primary-500: #6366f1;
+  --color-primary-600: #4f46e5;
+  --color-primary-700: #4338ca;
+  --color-primary-800: #3730a3;
+  --color-primary-900: #312e81;
+  --color-primary-950: #1e1b4b;
+
+  /* Sidebar colors */
+  --color-sidebar:      #0f172a;
+  --color-sidebar-hover: #1e293b;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
-}
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
+/* --- Base layer overrides --- */
+@layer base {
   body {
-    display: flex;
-    place-items: center;
+    @apply font-sans text-slate-800 bg-slate-50 antialiased;
   }
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+  a {
+    @apply text-primary-600 no-underline transition-colors duration-150;
+  }
+
+  a:hover {
+    @apply text-primary-700;
   }
 }
