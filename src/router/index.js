@@ -19,12 +19,30 @@ const routes = [
     meta: { title: 'Masuk', guest: true }, // guest: hanya untuk yang belum login
   },
 
-  // Route yang memerlukan AppLayout (Sidebar + Topbar)
+  // Route untuk Movie (Netflix-like)
   {
     path: '/',
+    component: () => import('@/layouts/MovieLayout.vue'),
+    children: [
+      {
+        path: '',
+        name: 'movies',
+        component: () => import('@/views/movies/MoviesView.vue'),
+        meta: { title: 'VueFlix - Movies' },
+      },
+      {
+        path: 'movie/:id',
+        name: 'movie-detail',
+        component: () => import('@/views/movies/MovieDetailView.vue'),
+        meta: { title: 'Movie Detail' },
+      },
+    ],
+  },
+
+  // Route lama yang memerlukan AppLayout (Sidebar + Topbar)
+  {
+    path: '/admin',
     component: () => import('@/layouts/AppLayout.vue'),
-    // [MATERI FASE 3: ROUTE META]
-    // meta.requiresAuth: halaman ini memerlukan login
     meta: { requiresAuth: true },
     children: [
       {
