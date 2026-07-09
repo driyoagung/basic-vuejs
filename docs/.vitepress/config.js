@@ -100,6 +100,21 @@ export default defineConfig({
           { text: 'Deployment & Build', link: '/fase-5/deployment' },
         ],
       },
+      {
+        text: '🎬 Movie App — Studi Kasus',
+        collapsed: false,
+        items: [
+          { text: 'Arsitektur Proyek', link: '/studi-kasus/arsitektur' },
+          { text: 'Layout & Navigasi', link: '/studi-kasus/layout-navigasi' },
+          { text: 'API Fetching (Axios)', link: '/studi-kasus/api-fetching' },
+          { text: 'State Management (Pinia)', link: '/studi-kasus/state-management' },
+          { text: 'Component Design', link: '/studi-kasus/component-design' },
+          { text: 'Router & Navigation', link: '/studi-kasus/router-navigation' },
+          { text: 'Modal Pattern', link: '/studi-kasus/modal-pattern' },
+          { text: 'Search & Filtering', link: '/studi-kasus/search-filtering' },
+          { text: 'Responsive & Tailwind', link: '/studi-kasus/responsive-tailwind' },
+        ],
+      },
     ],
 
     socialLinks: [
